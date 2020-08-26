@@ -12,8 +12,6 @@ test:
   <<: *default
   database: the645test_test
 
-production:
-  <<: *default
-  database: the645test_production
-  username: <%= ENV['POSTGRES_USERNAME'] %>
-  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  production:
+    <<: *default
+    database: 645app_prod
