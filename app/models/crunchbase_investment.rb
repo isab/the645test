@@ -1,0 +1,2 @@
+class CrunchbaseInvestment < ApplicationRecord
+end

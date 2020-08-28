@@ -1,0 +1,2 @@
+class CrunchbaseRound < ApplicationRecord
+end

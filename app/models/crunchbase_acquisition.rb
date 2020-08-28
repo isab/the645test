@@ -1,0 +1,2 @@
+class CrunchbaseAcquisition < ApplicationRecord
+end
