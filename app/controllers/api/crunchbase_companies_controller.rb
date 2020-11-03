@@ -3,9 +3,9 @@ class Api::CrunchbaseCompaniesController < ApplicationController
     render json: { crunchbase_companies: paginate(CrunchbaseCompany.all) }
   end
 
-  def show
+  def search
     name = params[:name]
-    company = CrunchbaseCompany.find_by(name: name)
+    company = CrunchbaseCompany.where('lower(name) = ?', name.downcase).first
     render json: { company: company }
   end
 end
